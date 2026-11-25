@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio SIG & Cartografía | Romina Paula Blanco</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%); color: white; padding: 3rem 1.5rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 0.5rem 0 0; font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-4px); }
+        .card img { width: 100%; height: auto; display: block; border-bottom: 1px solid #eee; cursor: pointer; }
+        .card-body { padding: 1.5rem; }
+        .card-body h3 { margin-top: 0; color: #1b4332; }
+        .tag { display: inline-block; background: #d8f3dc; color: #1b4332; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 0.8rem; }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Romina Paula Blanco</h1>
+    <p>Profesora en Geografía • Licenciada en Ciencia Política • Especialista SIG & Cartografía (QGIS)</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <a href="loteo_perg.png" target="_blank"><img src="loteo_perg.png" alt="Diagnóstico Territorial Pergamino"></a>
+            <div class="card-body">
+                <span class="tag">Teledetección • UTM 21S</span>
+                <h3>Diagnóstico Territorial y Delimitación de Lotes (Pergamino)</h3>
+                <p>Delimitación de parcelas productivas (922.2 ha y 83.2 ha) y análisis de cobertura vegetal mediante sensores remotos en QGIS, validado cuantitativamente con histograma de frecuencias ráster.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="Usos%20del%20suelo%20Presidente%20Peron.png" target="_blank"><img src="Usos%20del%20suelo%20Presidente%20Peron.png" alt="Usos del suelo Presidente Perón"></a>
+            <div class="card-body">
+                <span class="tag">Ordenamiento Territorial • EPSG:5347</span>
+                <h3>Mapa de Usos del Suelo (Municipio Presidente Perón)</h3>
+                <p>Cartografía temática urbana y periurbana elaborada con fuentes del IGN y OSM bajo sistema POSGAR 2007 / Argentina 5, clasificando zonas comerciales, industriales, agrícolas y de expansión residencial.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="piltri_mapafinal.png" target="_blank"><img src="piltri_mapafinal.png" alt="Perfil Topográfico Cerro Piltriquitrón"></a>
+            <div class="card-body">
+                <span class="tag">MDE • EPSG:32719</span>
+                <h3>Perfil Topográfico y Senderismo (Cerro Piltriquitrón, El Bolsón)</h3>
+                <p>Modelado digital de elevación basado en datos SRTM GL1 (30 m). Análisis de recorrido de 11.5 km y +1,071 m de desnivel positivo hasta la cumbre (2,260 m s.n.m.).</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="Pared_psicoblock.png" target="_blank"><img src="Pared_psicoblock.png" alt="Cartografía Logística Lago Moreno"></a>
+            <div class="card-body">
+                <span class="tag">Cartografía Outdoor • EPSG:3857</span>
+                <h3>Guía Psicoblock y Logística (Lago Moreno, Río Negro)</h3>
+                <p>Relevamiento sobre imagen satelital con trazado de sendero de aproximación (480 m), orientación de pared, exposición solar, vientos y perfil altitudinal.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="peru_georreferenciado.png" target="_blank"><img src="peru_georreferenciado.png" alt="Georreferenciación Perú"></a>
+            <div class="card-body">
+                <span class="tag">Georreferenciación • EPSG:4326</span>
+                <h3>Georreferenciación Cartográfica (Perú)</h3>
+                <p>Proceso en QGIS 3.x mediante 6 puntos de control terrestre (GCP) bajo WGS 84, transformación polinómica de primer orden y remuestreo de convolución cúbica (RMSE: 3.77 píxeles).</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Portafolio desarrollado con QGIS 3.x • Haz clic en cualquier mapa para verlo en alta resolución.</p>
+</footer>
+
+</body>
+</html>
